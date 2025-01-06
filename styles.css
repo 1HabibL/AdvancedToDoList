@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+body {
+    flex: 2;
+    background: linear-gradient(#F1FAFF, #CBE4FF);
+}
+    
+.projectcontainer {
+    display: flex;
+    }
+
+
+.side-nav-bar {
+display: flex;
+flex-direction: column;
+background: #151A2D;
+height: 100vh;
+padding: 20px;
+justify-content: flex-start;
+width: 225px;
+}
+
+
+.ul-navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .the-nav-bar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+.side-nav-bar img{
+height: 70px;
+width: 70px;
+}
+
+.nav-label-container{  
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px
+}
+
+.add-task-button{
+    color: white;
+}
+
+.add-task-button:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.nav-label{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    padding: 12.5px;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.nav-label:hover{
+    color: black;
+    background-color: white;
+}
+
+.material-symbols-rounded {
+    font-size: 24px; /* Adjust icon size */
+}
+
+.nav-bar-text{
+    padding-left: 20px;
+}
+
+
+/*SIDE BAR 2nd part: MY PROJECTS */
+
+#my-projects{
+    display: flex;
+    margin-top:20px;
+    color: white;
+}
+
+#my-projects-header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#my-projects-header-logo{
+    margin-left: auto;
+}
+
+
+/*Main page MY PROJECTS */
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.task-container{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 50vw;
+}
+
+.section-header{
+   
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black; 
+    margin: 20px 0;
+  }
+
+.main-body-list{
+list-style: none;
+padding: 0;       
+margin: 0;
+display: flex;      
+
+}
+
+#to-do-list-button{
+
+}
+
+
+.add-task-button-2{
+    display: flex;
+    width: 125px;
+    height: 30px;
+  justify-content: center; 
+  align-items: center;
+  cursor: pointer; 
+}
+
+.add-task-button-2:hover{
+    background-color: lightgray;
+    border-radius: 5px;
+    
+}
+
+
+
+/*tasks section */
+
+.tasks-section{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center; 
+}
+
+/*tasks section */
+
+
+/*form */
+
+.hidden-form{
+    display: none;
+}
+
+.visible-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#task-to-do-list-form{
+    background-color: peachpuff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+#action-buttons{
+    margin-left: auto;
+}
+
+
+#section-1-form, #section-2-form {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5px;
+}
+
+#section-3-form{
+    margin: 2.5px;
+}
+
+button {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;;
+  }
+
+
+  .taskCompletedButton{
+    padding: 7px 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;;
+  }
+
+
+/*form */
+
+/*the actual tasks*/
+#todolisttasks{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    justify-content: center;
+
+} 
+
+.header-underline{
+    margin: 5px;
+}
+
+.task-time{
+ display: flex;   
+}
+
+#todolisttasks{
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+
+.test-task{
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.test-task p{
+    margin-left: 15px;
+}
+
+.taskContainer{
+    margin: 20px;
+}
+
+.taskCard{
+    margin:20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*the actual tasks*/
+
+/* task list design*/
+

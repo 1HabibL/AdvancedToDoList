@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.body {
+    flex: 2;
+    background: linear-gradient(#F1FAFF, #CBE4FF);
+}
+
+.projectcontainer {
+    display: flex;
+}
+
+.side-nav-bar {
+    display: flex;
+    flex-direction: column;
+    background: #151A2D;
+    height: 100vh;
+    padding: 20px;
+    justify-content: flex-start;
+    width: 225px;
+}
+
+.side-nav-bar img {
+    height: 70px;
+    width: 70px;
+}
+
+.nav-label-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between list items */
+}
+
+.nav-label {
+    display: flex; /* Makes icon and text inline */
+    align-items: center; /* Vertical alignment */
+    gap: 10px; /* Space between icon and text */
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px; /* Rounded corners for hover effect */
+    cursor: pointer;
+}
+
+.nav-label:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-label::before {
+    font-family: 'Material Symbols Rounded';
+    font-size: 20px;
+}
+
+/* Icons for each label */
+#nav-label-search::before {
+    content: 'search';
+}
+
+#nav-label-inbox::before {
+    content: 'mail';
+}
+
+#nav-label-today::before {
+    content: 'today';
+}
+
+#nav-label-Upcoming::before {
+    content: 'event_upcoming';
+}
+
+#nav-label-Filters::before {
+    content: 'filter_alt';
+}
+
+#my-projects {
+    padding-top: 20px;
+    color: white;
+}
+
+
+/*SIDE BAR LOGOS */
+#add-task::before{
+    content: 'add_circle';
+     font-family: 'Material Symbols Rounded';
+     
+ }
+#nav-label-search::before{
+    content: 'search';
+    font-family: 'Material Symbols Rounded';
+}
+
+#nav-label-inbox::before{
+    content: 'mail';
+    font-family: 'Material Symbols Rounded';
+}
+
+#nav-label-today::before{
+    content: 'today';
+    font-family: 'Material Symbols Rounded';
+}
+
+#nav-label-Upcoming::before{
+    content: 'Event_Upcoming';
+    font-family: 'Material Symbols Rounded';
+}
+
+#nav-label-Filters::before{
+    content: 'Filter_Alt';
+    font-family: 'Material Symbols Rounded';
+}
+
+#my-projects{
+    padding-top: 20px;
+    color: white
+}
+
+.add-task-button-2{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <title>To-Do List App</title>
+</head>
+<body>
+    <div class="projectcontainer">
+        <div class="side-nav-bar">
+            <img src="images\10G.png" alt="10G Company Logo">
+           
+            <nav class="the-nav-bar" aria-label="Main Navigation">
+                <ul class="nav-label-container">
+                    <li class="nav-label" id="nav-label-add">
+                        <span class="material-symbols-rounded">Add</span>
+                        <span class="nav-bar-text">Add task</span>
+                    </li>
+                    <li class="nav-label" id="nav-label-search">
+                        <span class="material-symbols-rounded">search</span>
+                        <span class="nav-bar-text">Search</span>
+                    </li>
+                    <li class="nav-label" id="nav-label-inbox">
+                        <span class="material-symbols-rounded">mail</span>
+                        <span class="nav-bar-text">Inbox</span>
+                    </li>
+                    <li class="nav-label" id="nav-label-today"> 
+                        <span class="material-symbols-rounded">calendar_month</span>
+                        <span class="nav-bar-text">Today</span></li>
+                    <li class="nav-label" id="nav-label-Upcoming"> 
+                        <span class="material-symbols-rounded">event_upcoming</span>
+                        <span class="nav-bar-text">Upcoming</span></li>
+                    <li class="nav-label" id="nav-label-Filters"> 
+                        <span class="material-symbols-rounded">filter_alt</span>
+                        <span class="nav-bar-text">Filters and Labels</span></li>
+                </ul>
+            </nav>
+        
+            <div id="my-projects">
+                <span id="my-projects-header">My Projects</span>
+                <span class="material-symbols-rounded" id="my-projects-header-logo">Add</span>
+            </div>
+        </div>
+ 
+        
+<!-- Main Body Content -->
+    <div class="main-body">
+        <!-- Header and Add Task Container -->
+        <div class="task-container">
+            <h2 class="section-header" id="today-header">Today</h2>
+            <hr class="header-underline">
+            <ul class="main-body-list">
+                <li class="add-task-button-2" role="button">
+                    <span class="material-symbols-rounded icon">Add</span>
+                    <span class="nav-bar-text">Add Task</span>
+                </li>
+            </ul>
+        <!--ACtual tasks and form container -->
+            <div class="tasks-section">
+                <div class="to-do-list-form-container">
+                    <form id="task-to-do-list-form" class="hidden-form"> 
+                        <div id="section-1-form" class="fromSections">
+                            <label for="actualTask" class="formLabel">Task</label>
+                            <input class="form-input" type="text" id="actualTask" placeholder="Actual Task...." required>
+                        </div>
+
+                        <div id="section-2-form" class="fromSections">
+                            <label for="minorDesc" class="formLabel">Description</label>
+                            <input class="form-input" type="text" id="minorDesc" placeholder="Small Description...">
+                        </div>
+
+
+                        <div id="section-3-form" class="fromSections">
+                            <label for="taskDue">Due Date</label> 
+                            <input type="date" id="taskDue" name="taskDue">
+
+                            <label for="priority">Priority</label>
+                        <Select name="priority" id="priority">
+                            <option value="" disabled selected>Select Priority</option>
+                            <option value="Urgent">Urgent</option>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </Select>
+                        </div>
+                        <div class="universal-buttons" id="action-buttons">
+                            <button class="cancel-Button">Cancel</button>
+                            <button id="addTaskButton3"class="add-task-button-3" type="submit">Add Task</button>
+                        </div>
+                    </form>
+                </div>
+    
+        <!--The actual tasks-->
+            <div class="the-tasks" id="todolisttasks">
+            </div>
+        <!--The actual tasks-->
+        </div>
+    <!--ACtual tasks and form container -->
+        </div>
+        <!-- Task Container -->
+    </div>
+
+
+<!-- Main Body Content -->
+</div>
+</body>
+
+<script src="script.js"></script>
+</html>
+
+
+
+
