@@ -112,6 +112,7 @@ width: 70px;
     flex-direction: column;
     height: 90vh;
     width: 50vw;
+    overflow-y: auto; 
 }
 
 .section-header{
@@ -152,14 +153,11 @@ display: flex;
     
 }
 
-
-
 /*tasks section */
 
 .tasks-section{
     display: flex;
     flex-direction: column;
-    
     justify-content: center; 
 }
 
@@ -249,16 +247,6 @@ button {
 }
 
 
-.test-task{
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom:20px;
-}
-
-.test-task p{
-    margin-left: 15px;
-}
-
 .taskContainer{
     margin: 20px;
 }
@@ -271,6 +259,25 @@ button {
 }
 
 /*the actual tasks*/
+#newSection{
 
-/* task list design*/
+}
 
+#mainTaskDiv {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+/* task edit form*/
+
+
+
+
+
+
+
+
+
+
+/* task edit form*/
