@@ -93,7 +93,8 @@ const saveTaskCard = () => {
 /* delete button */
 
 const deleteButton = document.createElement("Button")
-deleteButton.classList.add('deleteButton');
+deleteButton.classList.add('negativeButton');
+deleteButton.id = 'deleteButton'
 deleteButton.textContent = "Delete"
 deleteButton.addEventListener("click", () => {
     taskCard.remove();
@@ -103,7 +104,7 @@ deleteButton.addEventListener("click", () => {
 
 /* complete button */
 const completeButton = document.createElement("Button")
-completeButton.classList.add('taskCompletedButton');
+completeButton.classList.add('positiveButton');
 completeButton.textContent = "Complete"
 completeButton.addEventListener("click", () => {
     taskCard.remove();
@@ -214,13 +215,25 @@ editButton.addEventListener("click", () => {
  /* newly edit section input for date and urgency*/
  /* Operation buttons*/
     const cancelButton = document.createElement('button');
-    cancelButton.classList.add('deleteButton');
+    cancelButton.classList.add('negativeButton');
     cancelButton.textContent = 'cancel';
-    
+
+    cancelButton.addEventListener("click", function (event) {
+
+        taskCard.innerHTML = "";
+        taskCard.appendChild(listItem)
+        taskCard.appendChild(paragraphItem)
+        taskCard.appendChild(sectionItem)
+        taskCard.appendChild(deleteButton)
+        taskCard.appendChild(editButton)
+        taskCard.appendChild(completeButton)
+        
+    })
+
 
 
     const updateButton = document.createElement('button');
-    updateButton.classList.add('deleteButton');
+    updateButton.classList.add('positiveButton');
     updateButton.id = 'updateButton';
     updateButton.textContent = 'update';
     
@@ -271,6 +284,7 @@ editButton.addEventListener("click", () => {
         taskCard.appendChild(sectionItem)
         taskCard.appendChild(deleteButton)
         taskCard.appendChild(editButton)
+        taskCard.appendChild(completeButton)
         saveTaskCard();
     })
     
@@ -283,8 +297,8 @@ taskCard.appendChild(listItem);
 taskCard.appendChild(paragraphItem);
 taskCard.appendChild(sectionItem);
 taskCard.appendChild(deleteButton);
-taskCard.appendChild(completeButton);
 taskCard.appendChild(editButton);
+taskCard.appendChild(completeButton);
 
 //append taskCard div
 document.getElementById('todolisttasks').appendChild(taskCard);
