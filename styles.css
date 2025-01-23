@@ -283,12 +283,16 @@ button {
 /* task edit form*/
 
 
-
-
-
-
-
-
-
-
 /* task edit form*/
+
+/* responsive design / media queries*/
+
+
+@media (max-width: 600px) {
+    .side-nav-bar {
+        display: none; 
+    }
+}
+
+
+/* responsive design / media queries*/
