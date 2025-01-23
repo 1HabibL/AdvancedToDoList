@@ -253,31 +253,6 @@ editButton.addEventListener("click", () => {
         sectionItem.textContent = `${newDueDate.value} - ${newPriority.value}`
 
         taskCard.innerHTML = "";
-        /*
-        const taskName1 = document.getElementById("newEditedTask").value;
-        const desc2 = document.getElementById("newTaskDesc").value;
-        const sec2 = document.getElementById("newSection").value;
-        const updatedDueDate = document.getElementById("newDueDate").value
-        const updatedPrioroty = document.getElementById("newPriority").value
-
-        const taskTitleNew = document.createElement('h1');
-        taskTitleNew.textContent = taskName1;
-        
-        const taskDescNew = document.createElement('p');
-        taskDescNew.textContent = desc2;
-
-        const newUpdatedSection = document.createElement("section")
-        newUpdatedSection.id = "newUpdatedSection"
-        newUpdatedSection.textContent = `${updatedDueDate} - ${updatedPrioroty}`
-
-        newTaskTitleLabel.remove();
-        newEditedTask.remove();
-        newTaskDescLabel.remove();
-        newSection.remove();
-        newTaskDesc.remove();
-        cancelButton.remove();
-        updateButton.remove();
-        */
 
         taskCard.appendChild(listItem)
         taskCard.appendChild(paragraphItem)
